@@ -5,6 +5,8 @@ Buatlah tabel mahasiswa yang berisi 4 field : NRP, Nama, Alamat, ID_Jur Buat tab
 Proses Untuk tambah data
 Proses untuk search data, dengan masukkan Nama. Data yang ditampilkan adalah NRP, Nama, Foto dan Nama Jurusan
 Proses untuk delete data, dengan masukan berupa NRP
+
+
 ===== PROBLEMS =====
 
 Make a student table that contains 4 fields: NRP, Name, Address, ID_Jur Create a majors table that contains 2 fields: ID_Jur, Name The two tables above are related to each other Create a web view that contains:
