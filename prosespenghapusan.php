@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-    $conn=mysqli_connect ("localhost","root","") or die ("koneksi gagal"); 
+    $conn=mysqli_connect ("localhost","root","") or die ("koneksi gagal"); /* Start to connect your PHP with your database */
     mysqli_select_db($conn, "percobaan6");
-    $nrpmahasiswa = $_GET["nrp"];
-    $penghapusan = mysqli_query($conn, "DELETE FROM mahasiswa WHERE NRP='$nrpmahasiswa'");
+    $nrpmahasiswa = $_GET["nrp"]; /* Input will be saved in $nrpmahasiswa */
+    $penghapusan = mysqli_query($conn, "DELETE FROM mahasiswa WHERE NRP='$nrpmahasiswa'"); /* Syntax for deleting data in database */
     echo "Data berhasil dihapus ! ! !";
     ?>
 </body>

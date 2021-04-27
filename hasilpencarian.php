@@ -8,11 +8,11 @@
 </head>
 <body>
     <?php
-    $conn=mysqli_connect ("localhost","root","") or die ("koneksi gagal"); 
+    $conn=mysqli_connect ("localhost","root","") or die ("koneksi gagal"); /* Start to connect your PHP with your database */
     mysqli_select_db($conn, "percobaan6");
     $namamahasiswa = $_GET["nama"];
     $query = "SELECT `mahasiswa`.`NRP`, `mahasiswa`.`Nama`, `jurusan`.`Nama Jurusan` FROM `mahasiswa` 
-    JOIN `jurusan` WHERE `jurusan`.`ID_Jur` = `mahasiswa`.`ID_Jur` AND `mahasiswa`.`Nama` like '%$namamahasiswa%'";
+    JOIN `jurusan` WHERE `jurusan`.`ID_Jur` = `mahasiswa`.`ID_Jur` AND `mahasiswa`.`Nama` like '%$namamahasiswa%'"; /* This syntax i used for searching data in database depends on what user want */
     $pencarian = mysqli_query($conn, $query);
     if ($pencarian) {
         while ($hasil = mysqli_fetch_row($pencarian)) {
